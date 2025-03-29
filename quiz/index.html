@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Programação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen">
+            <h1>Quiz de Programação</h1>
+            <p>Teste seus conhecimentos em programação!</p>
+            <button id="start-btn" class="btn">Começar Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="header">
+                <div class="progress">Questão <span id="current-question">1</span>/10</div>
+                <div class="score">Pontos: <span id="score">0</span></div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question">Pergunta aqui</h2>
+                <div id="answers" class="answers">
+                    <!-- Respostas serão inseridas via JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2>Resultado Final</h2>
+            <div class="result-info">
+                <p>Pontuação: <span id="final-score">0</span></p>
+                <p>Acertos: <span id="correct-answers">0</span>/10</p>
+            </div>
+            <button id="restart-btn" class="btn">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
