@@ -5,18 +5,22 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Melhora a legibilidade */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
+    margin: 0; /* Remove margens padrão */
 }
 
 .navbar {
     background-color: #000000;
+    padding: 15px 20px; /* Adiciona padding para melhor espaçamento */
 }
 
 .navbar-brand, .nav-link {
     color: #4cd964 !important;
+    transition: color 0.3s ease; /* Transição suave para hover */
 }
 
 .navbar-brand:hover, .nav-link:hover {
@@ -25,17 +29,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
     background-color: #000000;
-    padding: 100px 0;
+    padding: 100px 20px; /* Adiciona padding lateral para responsividade */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary,
+.card .btn-primary,
+.card .btn-secondary {
+    border: none;
+    transition: background-color 0.3s ease; /* Transição suave para botões */
 }
 
 .hero-buttons .btn-primary {
     background-color: #4cd964;
-    border: none;
 }
 
 .hero-buttons .btn-secondary {
     background-color: #7ee787;
-    border: none;
 }
 
 .bg-dark {
@@ -49,20 +60,17 @@ h1, h2, h3, h4, h5, h6 {
 .card {
     background-color: #333333;
     border: none;
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Para bordas arredondadas funcionarem */
+    transition: transform 0.3s ease; /* Transição suave para hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 .card-title, .card-text {
     color: #ffffff;
-}
-
-.card .btn-primary {
-    background-color: #4cd964;
-    border: none;
-}
-
-.card .btn-secondary {
-    background-color: #7ee787;
-    border: none;
 }
 
 .projetos-grid {
@@ -73,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .projeto-card {
     flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px; /* Garante que os cards não fiquem muito pequenos */
 }
 
 .sobre-detalhes .detalhe i {
@@ -86,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 .habilidades-grid {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Permite que as habilidades se ajustem em telas menores */
 }
 
 .habilidade-categoria ul {
@@ -108,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 .contato-social .social-link {
     color: #4cd964;
     margin-right: 10px;
+    transition: color 0.3s ease; /* Transição suave para hover */
 }
 
 .contato-social .social-link:hover {
@@ -117,4 +128,19 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     background-color: #000000;
     color: #ffffff;
+    padding: 20px; /* Adiciona padding ao footer */
+    text-align: center; /* Centraliza o texto do footer */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .projeto-card {
+        flex: 1 1 calc(50% - 20px); /* Ajusta para 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .projeto-card {
+        flex: 1 1 100%; /* Ajusta para 1 coluna em telas muito pequenas */
+    }
 }
