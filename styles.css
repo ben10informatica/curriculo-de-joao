@@ -1,146 +1,77 @@
-/* Fonte personalizada */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #000000;
-    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Preto */
+    color: #00ff00; /* Verde */
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Melhora a legibilidade */
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    margin: 0; /* Remove margens padrão */
 }
 
 .navbar {
-    background-color: #000000;
-    padding: 15px 20px; /* Adiciona padding para melhor espaçamento */
+    background-color: #000000; /* Preto */
+    color: #00ff00; /* Verde */
+    padding: 1rem 0;
 }
 
 .navbar-brand, .nav-link {
-    color: #4cd964 !important;
-    transition: color 0.3s ease; /* Transição suave para hover */
+    color: #00ff00; /* Verde */
 }
 
 .navbar-brand:hover, .nav-link:hover {
-    color: #7ee787 !important;
+    color: #ffffff; /* Branco */
 }
 
 .hero {
-    background-color: #000000;
-    padding: 100px 20px; /* Adiciona padding lateral para responsividade */
-    text-align: center; /* Centraliza o conteúdo */
-}
-
-.hero-buttons .btn-primary,
-.hero-buttons .btn-secondary,
-.card .btn-primary,
-.card .btn-secondary {
-    border: none;
-    transition: background-color 0.3s ease; /* Transição suave para botões */
+    background-color: #000000; /* Preto */
+    color: #00ff00; /* Verde */
+    padding: 5rem 0;
 }
 
 .hero-buttons .btn-primary {
-    background-color: #4cd964;
+    background-color: #00ff00; /* Verde */
+    border: none;
+    color: #000000; /* Preto */
 }
 
 .hero-buttons .btn-secondary {
-    background-color: #7ee787;
+    background-color: #ffffff; /* Branco */
+    border: none;
+    color: #000000; /* Preto */
 }
 
-.bg-dark {
-    background-color: #000000 !important;
+.sobre, .projetos, .habilidades, .contato {
+    background-color: #000000; /* Preto */
+    color: #00ff00; /* Verde */
 }
 
-.bg-light {
-    background-color: #f8f9fa !important;
+.sobre h2, .projetos h2, .habilidades h2, .contato h2 {
+    color: #00ff00; /* Verde */
 }
 
 .card {
-    background-color: #333333;
-    border: none;
-    border-radius: 8px; /* Adiciona bordas arredondadas */
-    overflow: hidden; /* Para bordas arredondadas funcionarem */
-    transition: transform 0.3s ease; /* Transição suave para hover */
-}
-
-.card:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    background-color: #000000; /* Preto */
+    border: 1px solid #00ff00; /* Verde */
 }
 
 .card-title, .card-text {
-    color: #ffffff;
+    color: #00ff00; /* Verde */
 }
 
-.projetos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.btn {
+    background-color: #00ff00; /* Verde */
+    border: none;
+    color: #000000; /* Preto */
 }
 
-.projeto-card {
-    flex: 1 1 calc(33.333% - 20px);
-    min-width: 250px; /* Garante que os cards não fiquem muito pequenos */
-}
-
-.sobre-detalhes .detalhe i {
-    color: #4cd964;
-}
-
-.sobre-detalhes .detalhe span {
-    color: #7ee787;
-}
-
-.habilidades-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Permite que as habilidades se ajustem em telas menores */
-}
-
-.habilidade-categoria ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.habilidade-categoria ul li {
-    padding: 5px 0;
-}
-
-.contato-item i {
-    color: #4cd964;
-}
-
-.contato-item p {
-    color: #7ee787;
-}
-
-.contato-social .social-link {
-    color: #4cd964;
-    margin-right: 10px;
-    transition: color 0.3s ease; /* Transição suave para hover */
-}
-
-.contato-social .social-link:hover {
-    color: #7ee787;
+.btn:hover {
+    background-color: #ffffff; /* Branco */
+    color: #000000; /* Preto */
 }
 
 footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px; /* Adiciona padding ao footer */
-    text-align: center; /* Centraliza o texto do footer */
+    background-color: #000000; /* Preto */
+    color: #00ff00; /* Verde */
 }
 
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    .projeto-card {
-        flex: 1 1 calc(50% - 20px); /* Ajusta para 2 colunas em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .projeto-card {
-        flex: 1 1 100%; /* Ajusta para 1 coluna em telas muito pequenas */
-    }
+footer p {
+    margin: 0;
 }
